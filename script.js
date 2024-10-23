@@ -49,7 +49,7 @@ function checkAnswer(optionIndex) {
         score+=1;
 
         // Esperar 3 segundos y generar la siguiente pregunta
-        setTimeout(generateQuestion, 3000);
+        //setTimeout(generateQuestion, 3000);
     } else {
         document.getElementById(`option${optionIndex}`).classList.add('wrong');
         document.getElementById('result').textContent = `¡Incorrecto! es ${correctAnswer}`;
