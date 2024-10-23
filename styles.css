@@ -70,3 +70,11 @@ h1 {
     font-weight: bold;
     margin-top: 20px;
 }
+
+footer{
+    color: #000;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+}
