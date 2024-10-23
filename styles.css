@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f8ff;
+    background-color: #000;
 }
 
 .container {
@@ -72,9 +72,14 @@ h1 {
 }
 
 footer{
-    color: #000;
+    color: #fff;
     position: absolute;
     bottom: 0%;
     width: 100%;
     text-align: center;
+    padding-bottom: 20px;
+}
+
+a{
+    color: #32cd32;
 }
