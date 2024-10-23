@@ -58,6 +58,8 @@ function checkAnswer(optionIndex) {
     }
     document.getElementById('score').textContent = `Puntos: ${score}`;
     setTimeout(generateQuestion, 3000);
+    selectedOption = null;
+    document.getElementById('result').textContent = '';
 }
 
 function showCorrectAnswer(correctIndex) {
