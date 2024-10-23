@@ -51,14 +51,14 @@ function checkAnswer(optionIndex) {
     const selectedValue = parseInt(document.getElementById(`option${optionIndex}`).textContent); // Obtener valor seleccionado
 
     if (selectedValue === correctAnswer) {
-        document.getElementById(`option${optionIndex}`).classList.add('correct');
         document.getElementById('result').textContent = '¡Correcto!';
         score+=1;
+        document.getElementById(`option${optionIndex}`).classList.add('correct');
     } else {
-        document.getElementById(`option${optionIndex}`).classList.add('wrong');
         //showCorrectAnswer(); // Mostrar la respuesta correcta si fallas
         score+=-2;
         document.getElementById('result').textContent = `¡Incorrecto! es ${correctAnswer}`;
+        document.getElementById(`option${optionIndex}`).classList.add('wrong');
     }
 
     document.getElementById('score').textContent = `Puntos: ${score}`;
